@@ -1,9 +1,9 @@
 # ja-full-text-search
 
-Japanese language tokenization and indexing for full-text searching. 
+Japanese language tokenization and indexing for [full-text searching](https://en.wikipedia.org/wiki/Full-text_search). 
 
 ### dependencies (all latest)
-gcc (or any c++17 compiler), mecab, mecab-ipadic, mongocxx, mongodb (or a connection to a mongo server)
+[gcc](https://github.com/gcc-mirror/gcc) (or any c++17 compiler), [mecab](https://github.com/taku910/mecab), [mecab-ipadic](https://github.com/taku910/mecab/tree/master/mecab-ipadic), [mongocxx](https://github.com/mongodb/mongo-cxx-driver)
 
 ### compilation
 ```bash
@@ -47,8 +47,8 @@ $ ./search ウィキペディア
 ```
 
 ### about
-Compared to most other languages, Japanese text indexing is an inherently more difficult task.\
+Compared to most other languages, Japanese text indexing is an [inherently more difficult task](http://www.cjk.org/cjk/joa/joapaper.htm).\
 Thankfully, many peoples contribution made it so that today we have a fair amount of tools at our disposal.
-Perhaps the most famous tool for Japanese tokenization is MeCab, a C++ library. Although most documentation is in Japanese, after some digging we can figure out how to make use of it.\
+Perhaps the most famous tool for Japanese tokenization is [MeCab](https://taku910.github.io/mecab/), a C++ library. Although most documentation is in Japanese, after some digging we can figure out how to make use of it.\
 This small application provides just that, an example of how to use MeCab to tokenize Japanese text, and inverse-indexing it in a database, mongoDB in our case.\
-Disclaimer: Other options exist, such as SOLR as full-text searching database and kuromoji's analyzer, both of which are incredibly easy to get set up, as long as you're fine with messing around with some Java.
+Disclaimer: Other options exist, such as [SOLR](https://lucene.apache.org/solr/) as full-text searching database and [kuromoji](https://github.com/atilika/kuromoji)'s analyzer, both of which are incredibly easy to get set up, as long as you're fine with messing around with some [Java](https://memegenerator.net/img/instances/46860754/programming-in-java.jpg).

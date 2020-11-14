@@ -1,18 +1,14 @@
 # ja-full-text-search
 
-### compilation
+
+### dependencies (all latest)
 ```bash
-g++ -std=c++17 `mecab-config --cflags` `mecab-config --libs` index.cpp -o index $(pkg-config --cflags --libs libmongocxx)
-g++ -std=c++17 `mecab-config --cflags` `mecab-config --libs` search.cpp -o search $(pkg-config --cflags --libs libmongocxx)
+mecab, mecab-ipadic, mongocxx, mongodb (or a connection to a mongo server)
 ```
 
-### dependencies
+### compilation
 ```bash
-dependencies
-mecab
-mecab-ipadic
-mongocxx
-mongodb (or a connection to a mongo server)
+make install
 ```
 
 ### test-run

@@ -1,0 +1,1 @@
+# ja-full-text-search
